@@ -31,22 +31,25 @@ public class Calculator {
         switch(choice){
             case 1:
                 result=0;
-                for(double num : numbers)
-                    result+=num;
+                for(double num : numbers) {
+                    result += num;
+                }
                 System.out.println("Sum = "+result);
                 break;
 
             case 2:
                 result=numbers[0];
-                for(int i=1;i<n;i++)
-                    result-=numbers[i];
+                for(int i=1;i<n;i++) {
+                    result -= numbers[i];
+                }
                 System.out.println("Subtraction Result = "+result);
                 break;
 
             case 3:
                 result=1;
-                for(double num : numbers)
+                for(double num : numbers){
                     result*=num;
+                    }
                 System.out.println("Multiplication Result = "+result);
                 break;
 
