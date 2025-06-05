@@ -9,7 +9,6 @@ public class Calculator {
         System.out.print("Enter how many numbers you want to calculate: ");
         n = s.nextInt();
         numbers=new double[n];
-
         for (int i=0;i<n;i++){
             System.out.print("Enter number "+(i+1)+": ");
             numbers[i] = s.nextDouble();
@@ -28,7 +27,7 @@ public class Calculator {
     void performOperation(int choice){
         double result = 0;
 
-        switch (choice){
+        switch(choice){
             case 1:
                 result=0;
                 for(double num : numbers)
@@ -38,14 +37,14 @@ public class Calculator {
 
             case 2:
                 result=numbers[0];
-                for (int i=1;i<n;i++)
+                for(int i=1;i<n;i++)
                     result-=numbers[i];
                 System.out.println("Subtraction Result = "+result);
                 break;
 
             case 3:
                 result=1;
-                for (double num : numbers)
+                for(double num : numbers)
                     result*=num;
                 System.out.println("Multiplication Result = "+result);
                 break;
