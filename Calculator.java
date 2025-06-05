@@ -21,7 +21,7 @@ public class Calculator {
         System.out.println("2. Subtraction");
         System.out.println("3. Multiplication");
         System.out.println("4. Division");
-        System.out.println("5. Modulos");
+        System.out.println("5. Mod");
         System.out.print("Enter your choice (1-5): ");
     }
 
@@ -72,7 +72,7 @@ public class Calculator {
                 for (int i=1;i<n;i++){
                     result %=numbers[i];
                 }
-                System.out.println("Division Result = "+result);
+                System.out.println("Mod Result = "+result);
                 break;
             default:
                 System.out.println("Invalid choice.");
