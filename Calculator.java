@@ -21,7 +21,8 @@ public class Calculator {
         System.out.println("2. Subtraction");
         System.out.println("3. Multiplication");
         System.out.println("4. Division");
-        System.out.print("Enter your choice (1-4): ");
+        System.out.println("5. Modulos");
+        System.out.print("Enter your choice (1-5): ");
     }
 
     void performOperation(int choice){
@@ -62,6 +63,13 @@ public class Calculator {
                 }
                 if(valid)
                     System.out.println("Division Result = "+result);
+                break;
+            case 5:
+                result=numbers[0];
+                for (int i=1;i<n;i++){
+                    result %=numbers[i];
+                }
+                System.out.println("Division Result = "+result);
                 break;
             default:
                 System.out.println("Invalid choice.");
