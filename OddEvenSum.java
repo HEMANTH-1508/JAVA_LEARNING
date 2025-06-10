@@ -4,7 +4,7 @@ public class OddEvenSum {
     public static void main(String[] args) {
         int n;
         int osum = 0;
-        int evensum = 0;
+        int esum = 0;
         Scanner s = new Scanner(System.in);
         System.out.print("ENTER SIZE OF ARRAY : ");
         n = s.nextInt();
@@ -15,12 +15,12 @@ public class OddEvenSum {
         }
         for (int num : arr) {
             if (num%2==0){
-                evensum+=num;
+                esum+=num;
             }
             else{
                 osum+=num;
             }
         }
-        System.out.print("EVEN SUM: "+evensum+"\nODD SUM : "+osum);
+        System.out.print("EVEN SUM: "+esum+"\nODD SUM : "+osum);
     }
 }
