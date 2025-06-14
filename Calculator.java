@@ -7,15 +7,15 @@ public class Calculator {
     void getValues(){
         Scanner s=new Scanner(System.in);
         System.out.print("Enter how many numbers you want to calculate: ");
-        n = s.nextInt();
+        n=s.nextInt();
         numbers=new double[n];
-        for (int i=0;i<n;i++){
+        for(int i=0;i<n;i++){
             System.out.print("Enter number "+(i+1)+": ");
-            numbers[i] = s.nextDouble();
+            numbers[i]=s.nextDouble();
         }
     }
 
-    void showMenu() {
+    void showMenu(){
         System.out.println("\nChoose operation to perform:");
         System.out.println("1. Addition");
         System.out.println("2. Subtraction");
@@ -27,7 +27,6 @@ public class Calculator {
 
     void performOperation(int choice){
         double result = 0;
-
         switch(choice){
             case 1:
                 result=0;
