@@ -10,6 +10,7 @@ class Forms {
     }
 }
 
+
 public class ConstructorDetailed {
     public static void main(String[] args) {
         new Forms();
