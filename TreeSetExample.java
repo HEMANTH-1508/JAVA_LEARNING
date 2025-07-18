@@ -73,27 +73,25 @@ class searchTree{
         System.out.print(node.n+" ");
         inorderTraversal(node.l);
     }
+
+    void search(int val){
+        searchelement(root,val);
+    }
+
+    boolean searchelement(Node root,int val){
+        if(root==null){
+            return false;
+        }
+        return false;
+    }
 }
 
 public class TreeSetExample {
     public static void main(String[] args) {
         searchTree element=new searchTree();
-        element.insert(30);
-        element.insert(50);
-        element.insert(10);
-        element.insert(20);
-        element.insert(90);
-        element.insert(15);
-
-        System.out.println("Inorder Traversal :  ");
-        element.inorderTraversal(element.root);
-        System.out.println("\nPreorder Traversal : ");
-        element.preorderTraversal(element.root);
-        System.out.println("\nPostorder Traversal : ");
-        element.postorderTravesal(element.root);
-        System.out.println("\nHeight of Tree : ");
-        System.out.print(element.findHeight(element.root));
-        System.out.println("\nMirror of Tree : ");
-        element.mirrorTree(element.root);
+        int[] val={2,5,4,6,7,3,8,9,1};
+        for(int num:val){
+            element.insert(num);
+        }
     }
 }
